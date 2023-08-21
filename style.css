@@ -1,0 +1,244 @@
+
+
+/* ======================================================
+ global variables..................
+=================================
+*/
+
+:root{
+
+ --color-primary-1: white;
+
+}
+
+
+
+
+/* ======================================================
+global styles..........................
+=================================
+*/
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+
+ body{
+    background: rgba(0,0,0,0.1) url("back\ img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 1rem;
+ }
+  
+ ul{
+    list-style-type: none;
+ }
+ a{
+    text-decoration: none;
+ }
+ img{
+    display: block;
+ }
+  
+ h1{
+  font-size: 4rem;
+ }
+ h2{
+    font-size: 2.5rem;
+ }
+ h3{
+    font: 1.7rem;
+ }
+  
+  
+ @media screen and (min-width: 800px) {
+   
+    
+ }   
+
+
+/* ======================================================
+global classes..........................
+=================================
+*/
+ 
+.btn{
+    padding: 0.377rem 0.77rem;
+    display: inline-block;
+    /* background-color: ; */
+    /* font-size: ; */
+    border: 1px solid red;
+    box-shadow: 0 1px 4px black;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.section{
+    padding: 5rem 0;
+}
+ 
+.section-center{
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 30rem;
+    margin-top: 5rem ;
+}
+
+/* main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  } */
+
+
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================
+projects styles..........................
+=================================
+*/
+ 
+.task-form{
+    /* margin-top: 5rem; */
+}
+
+.section-center {
+
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s linear;
+    padding: 3rem;
+  }
+
+ .heading{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #721c24;
+ }
+.alert{
+    margin-bottom: 1rem ;
+    height: 1rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font: size 0.5rem;;
+    /* letter-spacing: ; */
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    color: red;
+}
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+  }
+  .alert-success {
+    color: #155724;
+    background: #d4edda;
+  }
+
+  .form-container{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #tasks{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    /* background: ; */
+    font-size: 1rem;
+    flex: 1 0 auto;
+
+  }
+  .submit-btn{
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+  }
+
+
+
+  .task-container{
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden;
+  }
+  .show-container {
+    visibility: visible;
+  }
+
+  .task-item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 0.5rem;
+   padding: 0.3rem 1rem;
+   border-radius: 10px;
+  }
+  .task-item:hover{
+    color: grey;
+  }
+
+  .title{
+    color:grey;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+
+  .edit-btn{
+  font-size: 1rem;
+  cursor: pointer;
+  color: green;
+  border: none;
+  margin: 0 0.3rem;
+  }
+  .delete-btn{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: red;
+    border: none;
+  }
+
+  .clear-btn{
+    text-transform: capitalize;
+    width: 10rem;
+    height:1.5rem ;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    margin: auto ;
+    color: red;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+  border-color: transparent;
+  }
+
+  /* js uses ............. */
+  .complete-task{
+    text-decoration: line-through;
+    background-color: #09bb3f;
+    color: white;
+  }
